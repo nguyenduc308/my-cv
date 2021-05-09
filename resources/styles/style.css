@@ -1,0 +1,292 @@
+* {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  font-size: 1.8rem;
+  line-height: 140%;
+  font-family: "Inconsolata", monospace;
+}
+body,
+ul,
+li,
+p,
+section,
+main,
+aside,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+}
+.mx-auto {
+  margin: auto;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-normal {
+  font-weight: normal;
+}
+.font-small {
+  font-size: 14px;
+}
+.color-danger {
+  color: #f50057;
+}
+.color-success {
+  color: #28a745;
+}
+.text-2xl {
+  text-transform: uppercase;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.row {
+  max-width: 1200px;
+  display: flex;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header-right {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    justify-content: center;
+  }
+  .header-right {
+    display: block;
+  }
+}
+
+.header-content,
+.contact {
+  padding: 2rem 1rem;
+}
+.header-content {
+  border-bottom: 1px solid #ccc;
+}
+.title {
+  padding: 1rem 0;
+}
+.sidebar {
+  height: 100vh;
+  flex: 0 0 30%;
+  background-color: #38ada9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0;
+}
+.avatar .image {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: table;
+}
+.avatar .image .avatar-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.main {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.container {
+  padding: 2rem;
+}
+.container:not(:last-child) {
+  border-bottom: 1px solid #bcbcbc;
+}
+.download {
+  margin-left: -54px;
+}
+.download button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 1px 2px 3px #999;
+}
+.side-nav {
+  margin: 1rem;
+}
+.side-item a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+}
+.side-item a.active {
+  color: #333;
+}
+.box {
+  margin: 0 10%;
+  overflow: hidden;
+  padding: 1rem 0 4rem 6rem;
+}
+@media screen and (max-width: 767px) {
+  .box {
+    margin: 0;
+  }
+}
+.section-content {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  top: 0;
+}
+
+.box ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px dashed #38ada9;
+  position: absolute;
+  top: 0;
+  left: 3rem;
+}
+
+.box ul li {
+  margin: 2rem 6rem 6rem;
+  position: relative;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.03);
+  color: #333;
+  border-radius: 1rem;
+  line-height: 2rem;
+  width: 60%;
+}
+
+.box ul li > span {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px solid #38ada9;
+  position: absolute;
+  top: 0;
+  left: -3rem;
+}
+
+.box ul li > span:before,
+.box ul li > span:after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #38ada9;
+  border: 2px solid #38ada9;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.box ul li > span:before {
+  top: -1rem;
+}
+.box ul li > span:after {
+  top: 95%;
+}
+
+.box .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.box .info:first-letter {
+  text-transform: capitalize;
+  line-height: 1.7;
+}
+
+.box .name {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.box .time span {
+  position: absolute;
+  left: -110px;
+  color: #333;
+  font-size: 80%;
+  font-weight: bold;
+}
+.box .time span:first-child {
+  top: -12px;
+}
+.box .time span:last-child {
+  top: 94%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38ada9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38ada9;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .row {
+    width: 100%;
+  }
+}

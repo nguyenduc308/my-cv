@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="resources/styles/style.css" rel="stylesheet" />
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="resources/js/main.js"></script>
+    <title>Duc Nguyen's Resume</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <aside class="sidebar">
+          <div class="avatar">
+            <div class="image">
+              <img class="avatar-img" src="resources/images/avatar.jpg" />
+            </div>
+          </div>
+          <nav class="side-nav">
+            <ul class="side-list">
+              <li class="side-item"><a href="#about">About</a></li>
+              <li class="side-item">
+                <a href="#experiences">Experiences</a>
+              </li>
+              <li class="side-item"><a href="#skills">Technical Skills</a></li>
+              <li class="side-item"><a href="#education">Eduction</a></li>
+              <li class="side-item"><a href="#projects">Projects</a></li>
+            </ul>
+          </nav>
+          <div class="download">
+            <button>
+              <a href="resources/files/Nguyen-Huu-Duc.pdf">Download CV</a>
+            </button>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="header">
+            <div class="header-left">
+              <div class="header-content">
+                <h1 class="title">Front-end Developer</h1>
+                <h2 class="sub-title">Nguyen Huu Duc</h2>
+              </div>
+              <div class="contact">
+                <p>
+                  Email:
+                  <a href="mailto:duc.lux47@gmail.com">duc.lux47@gmail.com</a>
+                </p>
+                <p>
+                  Skype:
+                  <a href="#">duc.lux</a>
+                </p>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="avatar">
+                <div class="image">
+                  <img class="avatar-img" src="resources/images/avatar.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="container coords" id="about">
+            <h2 class="text-2xl">About me</h2>
+            <div class="section-content">
+              <p>
+                Hi, my name is <span class="font-bold">Duc Nguyen</span> from
+                Viet Nam. I am a Front-end Web Developer with a focus on
+                Angular/React. Beside, i am really passionate about NodeJS. 
+                Present, i work for Sutrix Solutions as a Front-end Developer.
+              </p>
+              <!-- <p>
+                So, below are some informations about me that I self-evaluate
+                honestly:
+              </p>
+              Javascript: 60, Typescript: 60, ReactJS: 50, Angular: 50, HTML,
+              CSS: 90, Nodejs: 40.
+              <p>
+                Besides, I love coding and blogging. I try to code everyday and
+                write blogs to share my experiences to people. I used to have a
+                Wordpress blog sharing about Finance - Banking - Inverting and
+                then, i made other blog using ReactJS to share my experience
+                about programming knowledge. Here are my blogs (in Vietnamese):
+                Duclux.Com.
+              </p> -->
+              <h3>In Brief</h3>
+              <p>
+                I am looking for a job about Front-end development. 
+                I have experience building SPA Web-App using Angular and React.
+              </p>
+            </div>
+          </section>
+          <section class="container coords" id="experiences">
+            <h2 class="text-2xl">Work Experience</h2>
+            <div class="section-content">
+              <div class="box">
+                <ul id="first-list">
+                  <li>
+                    <span></span>
+                    <div class="title">Front-end & Mobile Developer (Angular, NativeScript)</div>
+                    <div class="info">
+                      <strong>Project:  GlobeOne App </strong><br />
+                      <strong>Project description:</strong> GlobeOne official app, providing carrier services</strong><br />
+                      <strong>Team size:</strong> 9<br />
+                      <strong>Responsiblities:</strong> Maked components and services for app.<br />
+                      <strong>Accomplishments:</strong> Learned to read code in large source, debug and manage time.<br />
+                      <strong>Technologies:</strong> Angular, Typescript, Nativescript
+                    </div>
+                    <div class="name">Sutrix Solutitons</div>
+                    <div class="time">
+                      <span>PRESENT</span>
+                      <span>OCT, 2020</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span></span>
+                    <div class="title">Fullstack Javascript Developer</div>
+                    <div class="info">
+                      <strong>Project: Auction</strong><br />
+                      <strong>Project description: </strong> Realtime real estate auction <br />
+                      <strong>Team size:</strong> 6 <br />
+                      <strong>Responsiblities:</strong> Maked features for admin and client about auction process.<br />
+                      <strong>Accomplishments:</strong> Learned new technologies, handled complex UX/UI.<br />
+                      <strong>Technologies:</strong> React (for admin), Angular(for client), Nodejs.<br />
+                      <br />
+                      <strong>Project: Dalatedensee</strong> <br />
+                      <strong>Project description: </strong> Built dashboard and client for a resort.<br />
+                      <strong>Team size:</strong> 3 <br />
+                      <strong>Responsiblities:</strong> Maked features for a resort management and convert UI to wordpress.
+                      <strong>Accomplishments:</strong> Learned new technologies, handled complex UX/UI.<br />
+                      <strong>Technologies:</strong> Wordpress, Angular.
+                    </div>
+                    <div class="name">SoftWorld Viet Nam</div>
+                    <div class="time">
+                      <span>OCT, 2020 </span>
+                      <span>AUGUST, 2019</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="container coords" id="skills">
+            <h2 class="text-2xl">Technical Skills</h2>
+            <div class="section-content">
+              <ul>
+                <li><span class="font-bold">HTML/CSS/SCSS</span></li>
+                <li>
+                  <span class="font-bold">Javascript</span>
+                </li>
+                <li><span class="font-bold color-danger">Typescript</span></li>
+                <li>
+                  <span class="font-bold color-danger">Angular</span>
+                </li>
+                <li>
+                  <span class="font-bold">ReactJs</span>
+                </li>
+                <li>
+                  <span class="font-bold">Nodejs:</span>
+                  <span class="font-small">Express && NestJs</span>
+                </li>
+                <li>
+                  <span class="font-bold">Database:</span>
+                  <span class="font-small">MongoDB, MySQL</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="container coords" id="education">
+            <h2 class="text-2xl">Education</h2>
+            <div class="section-content">
+              <p>- Banking at Banking University of Ho Chi Minh City</p>
+            </div>
+          </section>
+          <section class="container coords" id="projects">
+            <h2 class="text-2xl">Personal Projects</h2>
+            <div class="section-content">
+              <div>
+                - I used react and angular to built some projects, to know more can
+                watch at my github:
+                <a href="https://github.com/nguyenduc308" target="_blank"
+                  >github.com/nguyenduc308</a
+                >
+              </div>
+              <div>
+                <p>
+                  My blog (using Nexjs):
+                  <a href="https://www.duclux.com/" target="_blank"
+                    >duclux.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
